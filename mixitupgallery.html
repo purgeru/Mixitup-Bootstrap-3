@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'/>
+		<!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/mixitup.css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+		<script type="text/javascript">
+		
+			/* 
+			*	We would normally recommend that all JavaScript is kept in a seperate .js file,
+			* 	but we have included it in the document head for convenience.
+			*/
+			
+			// INSTANTIATE MIXITUP
+		
+			$(function(){
+				$('#Grid').mixitup();
+			});
+			
+		</script>
+		
+		<title>MixItUp and Bootstrap 3</title>
+</head>
+	<body>
+		<div class="container">
+			
+			  	<div class="navbar">
+			      <div class="container">
+			        <a href="index.html" class="navbar-brand offer-padding">Mixitup + Bootstrap 3</a>
+			        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			        </button>
+			      </div>
+			    </div><!-- //End fixed navigaton -->
+
+			
+			<!-- FILTER CONTROLS -->
+
+		      <div class="row mixitup-wrapper">
+		        <div class="col-lg-12 col-md-12 col-sm-12">
+		          <div class="btn-group">
+		            <button type="button" class="btn btn-default btn-lg filter" data-filter="all">All cakes</button>
+		            <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
+		              <span class="caret"></span>
+		            </button>
+		            <ul class="dropdown-menu" role="menu">
+		              <li><a href="#" class="filter" data-filter="category_1">Kids cakes</a></li>
+		              <li><a href="#" class="filter" data-filter="category_2">Cakes for special occasions</a></li>
+		              <li><a href="#" class="filter" data-filter="category_3">Wedding cakes</a></li>
+		              <li><a href="#" class="filter" data-filter="category_4">Confirmation,Communion and Christening cakes</a></li>
+		              <li><a href="#" class="filter" data-filter="category_5">Every day cakes</a></li>
+		              <li><a href="#" class="filter" data-filter="category_6">Biscuits and Cookies</a></li>
+		            </ul>
+		          </div>
+		        </div>
+
+		      </div>
+		      
+		      
+		      <!-- GRID -->
+		      <div class="container">
+		            <div id="Grid" class="row mixitup-wrapper">
+		              <div class="col-lg-4 col-md-4 col-sm-4">
+		                <ul>
+		                  <li class="mix category_1" data-cat="1"><img class="img-responsive" src="img/otroska1.jpg" alt=""></li>
+		                  <li class="mix category_2" data-cat="2"><img class="img-responsive" src="img/posebna1.jpg" alt=""></li>
+		                  <li class="mix category_3" data-cat="3"><img class="img-responsive" src="img/porocna1.jpg" alt=""></li>
+		                  <li class="mix category_4" data-cat="4"><img class="img-responsive" src="img/krst1.jpg" alt=""></li>
+		                  <li class="mix category_5" data-cat="5"><img class="img-responsive" src="img/redna1.jpg" alt=""></li>
+		                  <li class="mix category_6" data-cat="6"><img class="img-responsive" src="img/pecivo1.jpg" alt=""></li>
+		                </ul>
+		              </div>
+
+		              <div class="col-lg-4 col-md-4 col-sm-4">
+		                <ul>
+		                  <li class="mix category_1" data-cat="1"><img class="img-responsive" src="img/otroska2.jpg" alt=""></li>
+		                  <li class="mix category_2" data-cat="2"><img class="img-responsive" src="img/posebna2.jpg" alt=""></li>
+		                  <li class="mix category_3" data-cat="3"><img class="img-responsive" src="img/porocna2.jpg" alt=""></li>
+		                  <li class="mix category_4" data-cat="4"><img class="img-responsive" src="img/krst2.jpg" alt=""></li>
+		                  <li class="mix category_5" data-cat="5"><img class="img-responsive" src="img/redna2.jpg" alt=""></li>
+		                  <li class="mix category_6" data-cat="6"><img class="img-responsive" src="img/pecivo2.jpg" alt=""></li>
+		                </ul>
+		              </div>
+
+		              <div class="col-lg-4 col-md-4 col-sm-4">
+		                <ul>
+		                  <li class="mix category_1" data-cat="1"><img class="img-responsive" src="img/otroska3.jpg" alt=""></li>
+		                  <li class="mix category_2" data-cat="2"><img class="img-responsive" src="img/posebna3.jpg" alt=""></li>
+		                  <li class="mix category_3" data-cat="3"><img class="img-responsive" src="img/porocna3.jpg" alt=""></li>
+		                  <li class="mix category_4" data-cat="4"><img class="img-responsive" src="img/krst3.jpg" alt=""></li>
+		                  <li class="mix category_5" data-cat="5"><img class="img-responsive" src="img/redna3.jpg" alt=""></li>
+		                  <li class="mix category_6" data-cat="6"><img class="img-responsive" src="img/pecivo3.jpg" alt=""></li>
+		                </ul>
+		              </div>
+
+		              <div class="col-lg-4 col-md-4 col-sm-4">
+		                <ul>
+		                  <li class="mix category_1" data-cat="1"><img class="img-responsive" src="img/otroska4.jpg" alt=""></li>
+		                  <li class="mix category_2" data-cat="2"><img class="img-responsive" src="img/posebna4.jpg" alt=""></li>
+		                  <li class="mix category_3" data-cat="3"><img class="img-responsive" src="img/porocna4.jpg" alt=""></li>
+		                  <li class="mix category_4" data-cat="4"><img class="img-responsive" src="img/krst4.jpg" alt=""></li>
+		                  <li class="mix category_5" data-cat="5"><img class="img-responsive" src="img/redna4.jpg" alt=""></li>
+		                  <li class="mix category_6" data-cat="6"><img class="img-responsive" src="img/pecivo4.jpg" alt=""></li>
+		                </ul>
+		              </div>
+		            </div>
+		        </div>
+		</div>
+		
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>	
+	</body>
+</html>
